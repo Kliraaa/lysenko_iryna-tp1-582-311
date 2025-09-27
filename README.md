@@ -12,3 +12,4 @@ Dans l’ensemble, No, I’m not a Human laisse une forte impression et séduit 
 
 ## Info extra
 https://store.steampowered.com/app/3180070/No_Im_not_a_Human/
+cover-img src= Video Games News (YouTube)
