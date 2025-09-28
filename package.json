@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Kliraaa/lysenko_iryna-tp1-582-311/issues"
   },
-  "homepage": "https://github.com/Kliraaa/lysenko_iryna-tp1-582-311#readme"
+  "homepage": "https://github.com/Kliraaa/lysenko_iryna-tp1-582-311#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
 }
