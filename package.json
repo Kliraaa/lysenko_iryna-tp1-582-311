@@ -1,0 +1,20 @@
+{
+  "name": "lysenko_iryna-tp1-582-311",
+  "version": "1.0.0",
+  "description": "Information sur mon tp1- critique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kliraaa/lysenko_iryna-tp1-582-311.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kliraaa/lysenko_iryna-tp1-582-311/issues"
+  },
+  "homepage": "https://github.com/Kliraaa/lysenko_iryna-tp1-582-311#readme"
+}
