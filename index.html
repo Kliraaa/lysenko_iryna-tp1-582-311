@@ -8,11 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <style>:root {--bs-font-sans-serif: 'VT323', monospace;}</style>
+    <style>
+        :root {--bs-font-sans-serif: 'VT323', monospace;}
+        h1, h5, th, .btn, button,.text-uppercase, .fw-bold, small {
+            font-family: 'VT323', monospace !important;
+        }
+        p, td {
+            font-size: 1.1rem;
+        }
+    </style>
+    
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     
-    <style> /*Changer la couleur primary default de Bootstarp*/
+    <style>
     :root,
     [data-bs-theme=dark] {
     --bs-primary: #00aaaa;
@@ -22,7 +31,7 @@
     .btn-primary {
     --bs-btn-bg: var(--bs-primary);
     --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-color: #000;
+    --bs-btn-color: black;
     --bs-btn-hover-bg: #02c7a7;
     --bs-btn-hover-border-color: #02c7a7;
     --bs-btn-active-bg: #01b397;
@@ -30,25 +39,137 @@
     --bs-btn-disabled-bg: var(--bs-primary);
     --bs-btn-disabled-border-color: var(--bs-primary);
     }
+
+    .accordion-button {
+        background-color: transparent;
+        color: white;
+        box-shadow: none;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .accordion-button:hover {
+        background-color: rgba(3, 221, 186, 0.1);
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: var(--bs-primary);
+        color: var(--bs-btn-color);
+    }
     </style>
 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header></header>
-    <main>
-        <article></article>
-        <aside>
-            <div class="card" style="width: 18rem;">
-            <img src="./assets/aside.jpg" class="card-img-top" alt="I'm not a Human cover">
-            <small class="text-muted">Source: Steam</small>
-            <div class="card-body">
-               <h5 class="card-title">I'm not a Human</h5> <i class="bi bi-microsoft"></i> 
-                <p class="card-text">ATTENTION. Ne sortez pas. Verrouillez vos portes. Fermez vos stores. Ne laissez entrer que les humains. Éliminez chaque Visiteur. Un jeu d'horreur psychologique parlant de paranoïa pendant la fin des temps.</p>
-                <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="btn btn-primary">Acheter à Steam</a>
-            </div>
-            </div>
-        </aside>
+    <header class="text-center py-5 text-white mb-4" 
+        style="background: url('./assets/cover-img.jpg') no-repeat center center; background-size: cover;">
+        <div class="container p-4 text-bg-dark bg-opacity-75 ">
+            <div class="text-uppercase fw-semibold mb-3">Critique par Iryna Lysenko</div>
+            <h1 class="fw-bold mb-2">No, I’m not a Human: le jeu qui vous fait douter de l’humain</h1>
+            <small>4<sup>e</sup> octobre 2025</small>
+        </div>
+    </header>
+
+    <main class="container py-4">
+        <div class="row justify-content-center">
+            <article class="col-12 col-md-8">
+                <p class="lead">No, I’m not a Human est un jeu d’horreur psychologique développé par le studio Trioskaz et publié par CRITICAL REFLEX. L’histoire se déroule dans un monde apocalyptique où le joueur doit distinguer les humains des mystérieux Visiteurs grâce à certains signes physiques, dont la véritable nature reste inconnue, afin de les accepter ou de les repousser. L’atmosphère de ténèbres, de désespoir et de tension constante rend chaque décision importante. J’ai attendu le jeu environ six mois et mes attentes se sont partiellement réalisées.</p>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Ce qui m’a plu, c’est que le jeu intrigue dès les premières minutes et plonge dans une atmosphère slave qui m’est familière. Il maintient une tension constante et oblige à prêter attention aux détails : parfois il ne sert à rien de vérifier des signes évidents, comme la présence de poils sous les aisselles d’une petite fille ou les yeux rouges d’un toxicomane, il est plus important de savoir lire le contexte. La part de mystère et la nature énigmatique du protagoniste ajoutent de la profondeur.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <figure class="mb-3">
+                            <img src="./assets/main-img.jpg" class="img-fluid rounded" alt="No, I'm not a Human capture d'écran">
+                            <figcaption><small class="text-muted">Source: Steam</small></figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <figure class="mb-3">
+                            <img src="./assets/check-img.jpg" class="img-fluid rounded" alt="No, I'm not a Human gameplay">
+                            <figcaption><small class="text-muted">Source: Steam</small></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-7">
+                        <p>Mais il y a aussi des défauts. Le système de sauvegarde est trop limité, ne permettant d’enregistrer qu’environ toutes les deux heures, ce qui est peu pratique pour un genre qui repose sur de nombreux choix. De plus, même après une vérification, il reste parfois difficile de savoir si l’on a affaire à un invité. La vérité sur ces invités ne se révèle pas, même après plusieurs parties, et l’utilité des objets de la boutique reste obscure tant qu’on ne les essaie pas, ce qui ralentit la progression.</p>
+                    </div>
+                </div>
+                <p>Dans l’ensemble, No, I’m not a Human laisse une forte impression et séduit par son ambiance. Malgré ses défauts, il mérite l’attention.</p>
+            
+                <div class="text-center bg-primary rounded p-4 mt-5">
+                <h2 class="text-uppercase mb-2">Assez bien</h2>
+                <div class="display-5 fw-bold">8/10</div>
+                </div>
+            </article>
+            
+            <aside class="col-lg-4 mt-5 mt-lg-0 col-md-8">
+                <div class="sticky-top pt-lg-2">
+                    <div class="card w-100">
+                    <img src="./assets/aside.jpg" class="card-img-top" alt="I'm not a Human cover">
+                    <figcaption><small class="text-muted px-3">Source: Steam</small></figcaption>
+                        <div class="card-body">
+                            <h5 class="card-title">No, I'm not a Human</h5>
+                            <p class="card-text">ATTENTION. Ne sortez pas. Verrouillez vos portes. Fermez vos stores. Ne laissez entrer que les humains. Éliminez chaque Visiteur. Un jeu d'horreur psychologique parlant de paranoïa pendant la fin des temps.</p>
+                            <table class="table table-sm mb-3">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Développeur</th>
+                                            <td>Trioskaz</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Éditeur</th>
+                                            <td>CRITICAL REFLEX</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Date de sortie</th>
+                                            <td>15 septembre 2025</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            <a href="https://store.steampowered.com/app/3180070/No_Im_not_a_Human/" class="btn btn-primary">Acheter sur Steam <i class="bi bi-steam"></i></a>
+                        </div>
+                    </div>
+                    <div class="accordion mt-2" id="info-additionnelle">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="jeu-similaire">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Jeu similaire</h4>
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#info-additionnelle">
+                                <div class="accordion-body">
+                                    <img src="./assets/papers_please.jpg" alt="papers_please-img" class="img-fluid rounded mb-3">
+                                    <figcaption><small class="text-muted">Source: Steam</small></figcaption>
+                                    <h5 class="d-inline me-2 my-2">Papers please</h5><a href="https://store.steampowered.com/app/239030/Papers_Please/" class="btn btn-primary btn-sm d-inline align-middle">Voir sur Steam <i class="bi bi-steam"></i></a>
+                                    <p class="mb-0">C'est un jeu de simulation où vous incarnez un inspecteur de l'immigration dans un pays fictif. Vous devez vérifier les documents des personnes qui souhaitent entrer, détecter les fraudeurs et prendre des décisions morales difficiles dans une atmosphère oppressante.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="par-critical-reflex">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>Jeu populaire de CRITICAL REFLEX</h4>
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#info-additionnelle">
+                                <div class="accordion-body">
+                                    <img src="./assets/mouthwashing.jpg" alt="mouthwashing-img" class="img-fluid rounded mb-3">
+                                    <figcaption><small class="text-muted">Source: Steam</small></figcaption>
+                                    <h5 class="d-inline me-2 my-2">Mouthwashing</h5><a href="https://store.steampowered.com/app/2475490/Mouthwashing/" class="btn btn-primary btn-sm d-inline align-middle">Voir sur Steam <i class="bi bi-steam"></i></a>
+                                    <p class="mb-0">C’est un jeu narratif et psychologique qui se déroule à bord d’un vaisseau spatial en perdition. Vous incarnez un membre d’équipage confronté à la faim, à la folie et à des hallucinations, alors que le seul liquide restant à bord est un bain de bouche. À travers l’exploration et des dialogues étranges, le jeu explore la paranoïa, la survie et la perte de repères dans un environnement clos et oppressant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="text-center py-4"><small>Lysenko Iryna - TP1 - Web 3</small></footer>
 </body>
 </html>

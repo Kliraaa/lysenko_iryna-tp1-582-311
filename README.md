@@ -1,5 +1,5 @@
 # Lysenko Iryna TP1 web 3
-Information sur mon tp1- critique
+Information sur mon tp1- critique sur le jeu No, I'm not a Human
 
 ## Text
 No, I’m not a Human est un jeu d’horreur psychologique développé par le studio Trioskaz et publié par CRITICAL REFLEX. L’histoire se déroule dans un monde apocalyptique où le joueur doit distinguer les humains des mystérieux Visiteurs grâce à certains signes physiques, dont la véritable nature reste inconnue, afin de les accepter ou de les repousser. L’atmosphère de ténèbres, de désespoir et de tension constante rend chaque décision importante. J’ai attendu le jeu environ six mois et mes attentes se sont partiellement réalisées.
@@ -10,7 +10,6 @@ Mais il y a aussi des défauts. Le système de sauvegarde est trop limité, ne p
 
 Dans l’ensemble, No, I’m not a Human laisse une forte impression et séduit par son ambiance. Malgré ses défauts, il mérite l’attention. Ma note est de 8 sur 10.
 
-## Info extra
-https://store.steampowered.com/app/3180070/No_Im_not_a_Human/
+## Sources
 cover-img src= Video Games News (YouTube)
 aside src = Steam
